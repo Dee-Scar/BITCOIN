@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- navbar section -->
+    <nav class="navbar"> 
+      <div class="logo">
+        <img src="./lg.png" style="height: 60px;" alt="ScarCapitals"/>
+      </div>
+
+        <!-- Hamburger Icon -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    &#9776;
+  </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+    <!-- Toggle Switch -->
+        <label class="theme-switch">
+          <input type="checkbox" id="toggleDark" />
+          <span class="slider"></span>
+        </label>
+      </nav>
+      
+  
+  </nav>
+ 
+  <!-- Hero Section -->
+  <section id="home" class="hero fade-in">
+    <div class="hero-text">
+      <h1>Discover, Collect & Sell Extraordinary NFTs</h1>
+      <p>Join the next-gen marketplace for digital art, collectibles, and more.</p>
+      <button class="cta-button" >Explore Now</button>
+      <button class="cta-button1" >Get Started</button>
+      
+    </div>
+    <div class="hero-image">
+      <img src="./herobg.png" alt="Hero Image" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about fade-in">
+    <div class="vision">
+      <h2>Our Vision</h2>
+      <p>To revolutionize digital ownership by building a decentralized world where creativity, value, and identity thrive without boundaries.
+
+        .</p>
+    </div>
+    <div class="divider"></div>
+    <div class="mission">
+      <h2>Our Mission</h2>
+      <p>To empower artists, collectors, and innovators by providing a secure and seamless <strong>NFT</strong> platform that celebrates originality, ensures transparency, and connects communities globally.
+
+      </p>
+    </div>
+  </section>
+
+
+   <!-- Services Section -->
+  <section id="services" class="services fade-in">
+    <h2 style="text-align: center;">Our Services</h2>
+    <div class="services-grid">
+        <div class="service-box">
+            <i  class="fas fa-paint-brush" style="font-size: 50px;"></i>
+            <h3 style="margin-top: 20px; margin-bottom: 30px;"> Mint Your NFT</h3>
+            <p>Create and upload your unique digital art or collectibles to the blockchain in a few simple steps.</p>
+          </div>
+        
+          <div class="service-box">
+            <i class="fas fa-compass" style="font-size: 50px;"></i>
+            <h3 style="margin-top: 20px; margin-bottom: 30px;"> Explore Marketplace</h3>
+            <p>Discover trending NFTs, rare collectibles, and top creators from around the world.</p>
+          </div>
+
+          <div class="service-box">
+            <i class="fas fa-wallet" style="font-size: 50px;"></i>
+            <h3 style="margin-top: 20px; margin-bottom: 30px;"> Connect Your Wallet</h3>
+            <p>Easily connect with MetaMask, Coinbase, or WalletConnect to start your NFT journey.</p>
+          </div>
+        
+          <div class="service-box">
+            <i class="fas fa-exchange-alt" style="font-size: 50px;"></i>
+            <h3 style="margin-top: 20px; margin-bottom: 30px;"> Buy & Sell NFTs</h3>
+            <p>Seamlessly trade NFTs with secure, fast transactions and low gas fees.</p>
+          </div>
+        
+          
+    </div>
+  </section>
+
+
+   <!-- Marketplace Preview -->
+   <section class="marketplace">
+    <h2 id="mk">Hot Trending NFTs</h2>
+    <div class="scroll-container">
+      <div class="nft-card">
+        <img src="./bigfoot-represented-neon-glow (1).jpg" alt="NFT 1" />
+        <h3>NFT 1</h3>
+        <p>NFT Monkey 1</p>
+        <button class="cta-btn">Buy Now</button>
+      </div>
+      <div class="nft-card">
+        <img src="./view-funny-monkey-human-clothing.jpg" alt="NFT 1" />
+        <h3>NFT 1</h3>
+        <p>NFT Monkey 1</p>
+        <button class="cta-btn">Buy Now</button>
+      </div>
+      <div class="nft-card">
+        <img src="./bigfoot-represented-neon-glow (3).jpg" alt="NFT 1" />
+        <h3>NFT 1</h3>
+        <p>NFT Monkey 1</p>
+        <button class="cta-btn">Buy Now</button>
+      </div>
+      <div class="nft-card">
+        <img src="./cyberpunk-bitcoin-illustration.jpg" alt="NFT 1" />
+        <h3>NFT 1</h3>
+        <p>NFT Monkey 1</p>
+        <button class="cta-btn">Buy Now</button>
+      </div>
+      <div class="nft-card">
+        <img src="./cyberpunk-bitcoin-illustration (2).jpg" alt="NFT 1" />
+        <h3>NFT 1</h3>
+        <p>NFT Monkey 1</p>
+        <button class="cta-btn">Buy Now</button>
+      </div>
+      <div class="nft-card">
+        <img src="./bigfoot-represented-neon-glow (2).jpg" alt="NFT 1" />
+        <h3>NFT 1</h3>
+        <p>NFT Monkey 1</p>
+        <button class="cta-btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+
+   <!-- Roadmap Section -->
+  <section id="roadmap" class="roadmap">
+    <h2>Roadmap</h2>
+    <ul class="steps">
+      <li>Q1 - Platform Launch</li>
+      <li>Q2 - Creator Tools</li>
+      <li>Q3 - DAO Integration</li>
+      <li>Q4 - Mobile App</li>
+    </ul>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-us">
+    <h2>Why Choose Us</h2>
+    <div class="benefits-grid">
+      <div><i class="fas fa-lock"></i> Secure</div>
+      <div><i class="fas fa-bolt"></i> Fast</div>
+      <div><i class="fas fa-coins"></i> Low Fees</div>
+      <div><i class="fas fa-users"></i> Community</div>
+    </div>
+  </section>
+  
+
+  <!-- Team Spotlight -->
+ <section id="team" class="team">
+    <h2>Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="./t1.jpg" alt="Team Member 1">
+        <h3>Dorcas Ben</h3>
+        <p>Lead Designer</p>
+      </div>
+      <div class="team-member">
+        <img src="./t2.jpg" alt="Team Member 2">
+        <h3>Oscar Benson</h3>
+        <p>Lead Dev.</p>
+      </div>
+      <div class="team-member">
+        <img src="./t3.jpg" alt="Team Member 3">
+        <h3>Nelly OG</h3>
+        <p>Community Manager</p>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <h2>Platform Stats</h2>
+    <div class="stats-grid">
+      <div>Total NFTs Minted: 20K+</div>
+      <div>Active Users: 5K+</div>
+      <div>Volume Traded: $1.2M</div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Community Says</h2>
+    <div class="quotes">
+      <blockquote>“Best NFT platform I’ve used.” – @nftlover</blockquote>
+      <blockquote>“Super fast and easy!” – @cryptoqueen</blockquote>
+    </div>
+  </section>
+
+  <!-- Promo Video -->
+  <section class="promo-video">
+    <h2>Watch Our Vision</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <div class="live-feed">🔥 John just minted "Cyber Ape #77"</div>
+
+  <!-- Contact / Join Us -->
+  <section id="contact" class="contact">
+    <h2>Join Our Community</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Join Now</button>
+    </form>
+    <div class="socials">
+      <a href="#">Twitter</a>
+      <a href="#">Discord</a>
+      <a href="#">Instagram</a>
+    </div>
+  </section>
+
+ 
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="terms">© 2025 NFTVerse • Terms • Privacy</div>
+
+  </footer>
+</body>
+</html>
