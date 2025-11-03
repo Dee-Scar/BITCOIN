@@ -1,6 +1,24 @@
 // Toggle dark mode with switch
 const toggleSwitch = document.getElementById("toggleDark");
 
+
+// Hamburger menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navLinkItems = document.querySelectorAll('.nav-links a'); // get all the nav links
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+// Close menu when any nav link is clicked
+navLinkItems.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+  });
+});
+
+
 toggleSwitch.addEventListener("change", () => {
   document.body.classList.toggle("dark");
 });
